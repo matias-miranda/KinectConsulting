@@ -89,7 +89,9 @@ display:
         type: fields
         options:
           default_field_elements: true
-          inline: {  }
+          inline:
+            created_1: created_1
+            field_tags: field_tags
           separator: '- '
           hide_empty: false
       fields:
