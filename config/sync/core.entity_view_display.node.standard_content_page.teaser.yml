@@ -27,4 +27,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_hero: true
+  field_paragraphs: true
