@@ -1,0 +1,30 @@
+uuid: 2308a764-8e40-405e-bcc4-03f847c862ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_articles
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: block_recent_articles
+theme: bootstrap
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:blog_articles-block_recent_articles'
+settings:
+  id: 'views_block:blog_articles-block_recent_articles'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /articles
+    negate: false
+    context_mapping: {  }

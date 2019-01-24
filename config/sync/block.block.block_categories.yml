@@ -1,0 +1,32 @@
+uuid: a4c10e82-5a93-4437-b1fb-1ad0fbbcef9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_articles
+  module:
+    - ctools
+    - views
+  theme:
+    - bootstrap
+id: block_categories
+theme: bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:blog_articles-block_categories'
+settings:
+  id: 'views_block:blog_articles-block_categories'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

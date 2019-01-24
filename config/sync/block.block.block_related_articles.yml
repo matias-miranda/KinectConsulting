@@ -1,0 +1,33 @@
+uuid: d013319a-8c34-483b-b995-70ad9c0c383f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_articles
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap
+id: block_related_articles
+theme: bootstrap
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:blog_articles-block_related_articles'
+settings:
+  id: 'views_block:blog_articles-block_related_articles'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
