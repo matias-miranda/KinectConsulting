@@ -3,17 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.generic_page.body
-    - field.field.node.generic_page.field_hero
-    - field.field.node.generic_page.field_paragraphs
-    - node.type.generic_page
+    - field.field.node.standard_content_page.body
+    - field.field.node.standard_content_page.field_hero
+    - field.field.node.standard_content_page.field_paragraphs
+    - node.type.standard_content_page
   module:
     - entity_reference_revisions
     - text
     - user
-id: node.generic_page.default
+id: node.standard_content_page.default
 targetEntityType: node
-bundle: generic_page
+bundle: standard_content_page
 mode: default
 content:
   body:
