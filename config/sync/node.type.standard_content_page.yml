@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 name: 'Generic Page'
-type: generic_page
+type: standard_content_page
 description: ''
 help: ''
 new_revision: true
