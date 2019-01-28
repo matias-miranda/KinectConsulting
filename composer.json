@@ -80,6 +80,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/core": {
+                "Views argument MonthDate invalid timestamp": "https://www.drupal.org/files/issues/2019-01-28/views-argument-MonthDate-invalid-timestamp-2969107-4.patch"
+            }
         }
     }
 }
