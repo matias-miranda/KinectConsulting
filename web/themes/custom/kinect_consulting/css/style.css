@@ -64,6 +64,7 @@ body {
     color: #fff;
     padding:0;
     width: 100%;
+    max-width: 1560px;
 }
 .region-footer {
     margin: 5rem 10rem;
