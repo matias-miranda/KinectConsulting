@@ -58,6 +58,36 @@ body {
     clear: both
 }
 
+/* FOOTER */
+.footer.container {
+    background: #807f7f;
+    color: #fff;
+    padding:0;
+    width: 100%;
+}
+.region-footer {
+    margin: 5rem 10rem;
+}
+.region-footer nav {
+    text-align: center;
+}
+.region-footer .field--name-body {
+    font-size: 12px;
+}
+.menu--footer.nav li {
+    display: inline-block;
+    margin: 0 0 .25em 1.5em;
+}
+.menu--footer.nav li a,
+.menu--footer.nav li a:hover,
+.menu--footer.nav li a:active {
+    color: #FFF;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+
+
 /*  BUTTONS */
 .agree-button:hover, .agree-button:focus,
 .field--name-field-cta a:hover, .field--name-field-cta a:focus {
