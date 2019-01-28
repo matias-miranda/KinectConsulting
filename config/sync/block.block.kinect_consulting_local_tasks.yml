@@ -9,7 +9,7 @@ _core:
 id: kinect_consulting_local_tasks
 theme: kinect_consulting
 region: header
-weight: 10
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:
