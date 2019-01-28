@@ -129,3 +129,19 @@ body {
         font-size: 18px;
     }
 }
+
+/* ImageText component */
+.paragraph--type--image-text {
+    margin-top: 5rem;
+}
+
+.paragraph--type--image-text .field--name-field-image img {
+    max-height: 400px;
+}
+
+@media (min-width: 992px) {
+    .image-text-vertical-align {
+        display: flex;
+        align-items: center;
+    }
+}
