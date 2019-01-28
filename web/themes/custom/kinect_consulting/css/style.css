@@ -90,14 +90,17 @@ body {
 
 /*  BUTTONS */
 .agree-button:hover, .agree-button:focus,
-.field--name-field-cta a:hover, .field--name-field-cta a:focus {
+.field--name-field-cta a:hover,
+.field--name-field-cta a:focus,
+.form-actions button:hover {
     background: #f0f0f1;
     border: 1px solid #0fc477;
     color: #0fc477;
 }
 
 .agree-button,
-.field--name-field-cta a{
+.field--name-field-cta a,
+.form-actions button {
     background: #0fc477;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -113,6 +116,7 @@ body {
     position: relative;
     text-align: center;
     text-decoration: none;
+    border-color: #0fc477;
 }
 
 
@@ -213,4 +217,80 @@ body {
         display: flex;
         align-items: center;
     }
+}
+
+/* Blog search page */
+
+.view-display-id-articles_main_page .view-header h2 {
+    font-size: 4.8rem;
+    line-height: 1.4;
+    color: #0fc477;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.view-display-id-articles_main_page .view-filters {
+    text-align: center;
+}
+
+.view-display-id-articles_main_page .form--inline .form-item {
+    padding-right: 25px;
+}
+
+.view-display-id-articles_main_page .select-wrapper:after {
+    display: none;
+}
+
+.view-display-id-articles_main_page .select-wrapper select {
+    background: url(../images/select_arrows.png) no-repeat center right #f0f0f1;
+    height: 38px;
+    padding-right: 50px;
+    border: 0;
+}
+
+.view-display-id-articles_main_page .form-actions button {
+    padding: 9px 20px 9px 20px;
+}
+
+.view-display-id-articles_main_page .form-actions button > span.glyphicon-search {
+    display: none;
+}
+
+.block-views-blockblog-articles-block-recent-articles h2 {
+    font-size: 2.8rem;
+    color: #7f7f7f;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.block-views-blockblog-articles-block-recent-articles {
+    background: #ebebeb;
+}
+
+.block-views-blockblog-articles-block-recent-articles .view-content {
+    text-align: center;
+}
+
+.block-views-blockblog-articles-block-recent-articles .views-row {
+    width: 290px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 14px;
+    margin-right: 14px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.block-views-blockblog-articles-block-recent-articles .views-row .views-field-field-image {
+    margin-bottom: 38px;
+}
+
+.block-views-blockblog-articles-block-recent-articles .views-row .views-field-field-image img {
+    border-radius: 4px;
+}
+
+.block-views-blockblog-articles-block-recent-articles .views-row .views-field-title a {
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #7f7f7f;
 }

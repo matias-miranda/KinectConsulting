@@ -15,6 +15,7 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -26,6 +27,7 @@ module:
   history: 0
   image: 0
   kc_content: 0
+  kc_custom: 0
   kint: 0
   link: 0
   link_attributes: 0
