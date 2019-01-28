@@ -1,0 +1,13 @@
+<div class="row image-text-vertical-align">
+  <div class="col-md-6{% if content.field_text_position.0['#markup'] == 'Right' %} col-md-push-6{% endif %}">
+    <div class="wrapper">
+      <h4 class="text-center">
+        {{ content.field_title['#items'].getString() }}
+      </h4>
+      <p class="text-center">
+        {{ content.field_text['#items'].getString() }}
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6{% if content.field_text_position.0['#markup'] == 'Right' %} col-md-pull-6{% endif %}">{{ content.field_image }}</div>
+</div>
