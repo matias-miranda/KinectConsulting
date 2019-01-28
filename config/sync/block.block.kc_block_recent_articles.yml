@@ -12,7 +12,7 @@ dependencies:
 id: kc_block_recent_articles
 theme: kinect_consulting
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: 'views_block:blog_articles-block_recent_articles'
 settings:
