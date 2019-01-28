@@ -14,6 +14,7 @@ body {
     font-family: ProximaNova,Arial,Helvetica,sans-serif;
 }
 
+/* TOP BAR*/
 .navbar.container {
     max-width: none;
     width: 100%;
@@ -46,18 +47,27 @@ body {
     color: #0f73c4;
     outline: none;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #0fc477 !important;
+    font-weight: 700;
+    background: none;
+}
 #block-kinect-consulting-main-menu {
     clear: both
 }
 
 /*  BUTTONS */
-.agree-button:hover, .agree-button:focus {
+.agree-button:hover, .agree-button:focus,
+.field--name-field-cta a:hover, .field--name-field-cta a:focus {
     background: #f0f0f1;
     border: 1px solid #0fc477;
     color: #0fc477;
 }
 
-.agree-button {
+.agree-button,
+.field--name-field-cta a{
     background: #0fc477;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -96,6 +106,35 @@ body {
 #sliding-popup .cookie-policy-form .vertical-tabs {
     margin-left: 0;
 }
+
+/* HERO */
+
+.field--name-field-hero .hero-image {
+    background-size: cover;
+    height: 440px;
+    position: relative;
+}
+.field--name-field-hero.split > .field--item {
+    width: 50%;
+    float:left;
+}
+.field--name-field-hero.split > .field--item:first-child .hero-image {
+    background-position: right;
+}
+.field--name-field-hero.split > .field--item:last-child .hero-image {
+    background-position: left;
+}
+.content-wrapper {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+.field--name-field-cta {
+    text-align: center;
+}
+
 
 /* BREAKPOINTS */
 @media screen and (min-width: 960px) {
