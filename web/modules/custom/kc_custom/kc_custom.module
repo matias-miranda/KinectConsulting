@@ -1,7 +1,6 @@
 <?php
 
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Cache\Cache;
@@ -36,7 +35,7 @@ function kc_custom_form_views_exposed_form_alter(&$form, FormStateInterface $for
       '#options' => $options,
       '#size' => NULL,
       '#default_value' => 'all',
-      '#weight' => 2
+      '#weight' => 2,
     ];
 
     $form['postdate']['month'] = [
@@ -44,7 +43,7 @@ function kc_custom_form_views_exposed_form_alter(&$form, FormStateInterface $for
       '#options' => _kc_custom_months(),
       '#size' => NULL,
       '#default_value' => 'all',
-      '#weight' => 3
+      '#weight' => 3,
     ];
 
     $form['author']['#weight'] = 4;
@@ -53,7 +52,7 @@ function kc_custom_form_views_exposed_form_alter(&$form, FormStateInterface $for
 }
 
 function _kc_custom_articles_years() {
-  $options['all'] = new TranslatableMarkup('- Year -');
+  $options['all'] = '- Year -';
 
   $connection = \Drupal::database();
   $query = $connection->select('node_field_data', 'nfd');
@@ -70,7 +69,7 @@ function _kc_custom_articles_years() {
 
 function _kc_custom_months() {
   return [
-    'all' => new TranslatableMarkup('- Month -'),
+    'all' => '- Month -',
     '01' => 'Jan',
     '02' => 'Feb',
     '03' => 'Mar',
@@ -93,8 +92,6 @@ function _kc_custom_months() {
 function kc_custom_node_presave(EntityInterface $entity) {
   $bundle = $entity->bundle();
   if ($bundle == 'article') {
-    // Check if a bulletin updated has a new year, and invalidate the
-    // options cached used in the custom views filter for filtering by year.
     $data = \Drupal::cache()->get(CID_ARTICLES_CREATION_YEARS);
     if ($data) {
       $options = $data->data;
