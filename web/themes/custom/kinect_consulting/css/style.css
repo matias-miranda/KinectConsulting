@@ -64,9 +64,10 @@ body {
     color: #fff;
     padding:0;
     width: 100%;
+    max-width: 1680px;
 }
 .region-footer {
-    margin: 5rem 10rem;
+    margin: 7rem;
 }
 .region-footer nav {
     text-align: center;
