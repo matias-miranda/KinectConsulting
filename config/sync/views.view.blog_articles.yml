@@ -13,8 +13,6 @@ dependencies:
     - node.type.article
     - taxonomy.vocabulary.authors
     - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:158f4c9f-d2f8-48fc-897e-624f1a814d17'
   module:
     - image
     - node
@@ -628,6 +626,7 @@ display:
         arguments: false
         style: false
         row: false
+        empty: false
       filters:
         status:
           value: '1'
@@ -827,6 +826,18 @@ display:
         options:
           relationship: none
           view_mode: item_list
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<h3>No results</h3> '
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:
@@ -1526,6 +1537,7 @@ display:
         options:
           relationship: none
           view_mode: vertical_item_list
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
