@@ -6,7 +6,7 @@
     - format: "full_html"
       value: |
         <div class="row footer-addresses">
-          <div class="col-md-6">
+          <div class="col-md-2">
             <div class="address-item">
               <strong>Miami</strong><br/>
               9800 NW 41st St. Suite 400<br/>
@@ -38,7 +38,7 @@
               tel: 305.428.8255
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-10">
             <div class="address-item">
               <strong>San Jose, Costa Rica</strong><br/>
               Parque Empresarial Forum 2<br/>
