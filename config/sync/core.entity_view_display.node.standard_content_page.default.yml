@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.standard_content_page.body
-    - field.field.node.standard_content_page.field_exclude_title_from_display
     - field.field.node.standard_content_page.field_hero
     - field.field.node.standard_content_page.field_paragraphs
     - node.type.standard_content_page
@@ -23,16 +22,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_exclude_title_from_display:
-    weight: 3
-    label: hidden
-    settings:
-      format: true-false
-      format_custom_true: ''
-      format_custom_false: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   field_hero:
     type: entity_reference_revisions_entity_view

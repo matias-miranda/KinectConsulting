@@ -11,7 +11,7 @@ _core:
 id: kinect_consulting_breadcrumbs
 theme: kinect_consulting
 region: header
-weight: -8
+weight: -100
 provider: null
 plugin: system_breadcrumb_block
 settings:

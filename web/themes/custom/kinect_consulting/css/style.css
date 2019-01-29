@@ -312,7 +312,7 @@ header .container {
     font-size: 4.8rem;
     line-height: 1.4;
     color: #0fc477;
-    margin-bottom: 64px;
+    margin-bottom: 34px;
     text-align: center;
 }
 
@@ -343,7 +343,7 @@ header .container {
     display: none;
 }
 
-.block-views-blockblog-articles-block-recent-articles h2 {
+.block-views-blockblog-articles-block-recent-articles h2.block-title {
     font-size: 2.8rem;
     color: #7f7f7f;
     margin-bottom: 44px;
@@ -354,22 +354,20 @@ header .container {
     background: #ebebeb;
 }
 
+.view-display-id-articles_main_page .view-filters {
+    margin-bottom: 50px;
+}
+
 .block-views-blockblog-articles-block-recent-articles .view-content {
-    text-align: center;
+    font-size: 17px;
 }
 
 .block-views-blockblog-articles-block-recent-articles .views-row {
-    width: 290px;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 14px;
-    margin-right: 14px;
-    text-align: left;
     margin-bottom: 30px;
 }
 
 .block-views-blockblog-articles-block-recent-articles .views-row .views-field-field-image {
-    margin-bottom: 38px;
+    margin-bottom: 15px;
 }
 
 .block-views-blockblog-articles-block-recent-articles .views-row .views-field-field-image img {
@@ -380,4 +378,30 @@ header .container {
     font-size: 2rem;
     line-height: 1.4;
     color: #7f7f7f;
+}
+
+.row.article-item-list {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dadcde;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.row.article-item-list .article-content {
+    min-height: 110px;
+}
+
+.row.article-item-list h2.article-title {
+    margin-top: 0;
+}
+
+.row.article-item-list .article-title a,
+.row.article-vertical-item-list .article-title a{
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #807e7f;
+}
+
+.row.article-vertical-item-list .article-created-and-category {
+    margin-top: 20px;
 }

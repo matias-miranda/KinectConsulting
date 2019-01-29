@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.item_list
+    - core.entity_view_mode.node.vertical_item_list
     - field.storage.node.body
     - field.storage.node.field_author
     - field.storage.node.field_image
     - field.storage.node.field_tags
+    - image.style.290x195
     - node.type.article
     - taxonomy.vocabulary.authors
     - taxonomy.vocabulary.tags
@@ -52,7 +55,7 @@ display:
         type: basic
         options:
           submit_button: Search
-          reset_button: false
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -623,6 +626,8 @@ display:
         filters: false
         filter_groups: false
         arguments: false
+        style: false
+        row: false
       filters:
         status:
           value: '1'
@@ -811,6 +816,17 @@ display:
           validate_options: {  }
           entity_type: node
           plugin_id: date_month
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: item_list
     cache_metadata:
       max-age: -1
       contexts:
@@ -1122,6 +1138,8 @@ display:
         filters: false
         filter_groups: false
         pager: false
+        style: false
+        row: false
       fields:
         field_image:
           id: field_image
@@ -1174,7 +1192,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: 290x195
             image_link: content
           group_column: ''
           group_columns: {  }
@@ -1497,6 +1515,17 @@ display:
         options:
           items_per_page: 3
           offset: 0
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: vertical_item_list
     cache_metadata:
       max-age: -1
       contexts:
