@@ -26,10 +26,24 @@ function kc_content_install() {
 }
 
 /**
- * Implements hook_update_8001.
- *
  * Update content (Creates Home Page)
  */
 function kc_content_update_8001() {
+  kc_content_install();
+}
+
+/**
+ * Update content (Set Internal URLs in Home Page)
+ */
+function kc_content_update_8002() {
+  $alias = \Drupal::service('path.alias_manager')
+    ->getPathByAlias('/kinect-consulting');
+  $params = \Drupal\Core\Url::fromUri("internal:" . $alias)
+    ->getRouteParameters();
+  $entity_type = key($params);
+  $node = \Drupal::entityTypeManager()
+    ->getStorage($entity_type)
+    ->load($params[$entity_type]);
+  $node->delete();
   kc_content_install();
 }
