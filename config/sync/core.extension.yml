@@ -26,6 +26,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kc_content: 0
   kc_custom: 0
   kint: 0
   link: 0

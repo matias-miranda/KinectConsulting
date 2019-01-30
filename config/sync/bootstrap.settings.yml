@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: '/themes/contrib/bootstrap/favicon.ico'
+  url: /themes/contrib/bootstrap/favicon.ico
   use_default: true
 navbar_position: fixed-top
 table_responsive: '-1'

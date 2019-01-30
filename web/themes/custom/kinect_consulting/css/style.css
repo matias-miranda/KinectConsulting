@@ -11,7 +11,7 @@
 }
 .dialog-off-canvas-main-canvas {
     max-width: 1680px;
-    margin: 68px auto 0;
+    margin: 0 auto;
     overflow: hidden;
     font-family: ProximaNova,Arial,Helvetica,sans-serif;
 }
@@ -21,15 +21,12 @@
     padding: 0;
 }
 /* TOP BAR */
-header.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
+
 header .container {
     width: 100%;
     max-width: 1680px;
+    border-bottom: 1px solid rgba(20,35,64,.07);
+    margin-bottom: 15px;
 }
 .navbar-header {
     background-color: #FFF;
@@ -112,11 +109,32 @@ header .container {
     overflow: hidden;
     position: relative;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 20px auto 0;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 1.5rem;
+}
+.standard-content-page .field--name-body {
+    font-size: 2rem;
+}
+p+p {
+    margin-top: 10px;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
+p {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    margin-bottom: 1rem;
+}
+b, strong {
+    font-family: ProximaNovaBold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+}
 /* FOOTER */
 .footer.container {
     background: #807f7f;
@@ -261,9 +279,6 @@ header .container {
     .field--name-field-hero.split > .field--item {
         width: 50%;
         float:left;
-    }
-    .dialog-off-canvas-main-canvas {
-        margin-top: 120px;
     }
     .logo.navbar-btn img {
         width: 150px;
