@@ -15,7 +15,7 @@
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
     <div class="article-content article-content-trimmed">
-      {{ content.body.0['#text']|striptags|slice(0, 400) ~ '...' }}
+      {{ content.body|render|striptags|slice(0, 400) ~ '...' }}
     </div>
   </div>
 </div>
