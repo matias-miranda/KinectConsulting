@@ -1,0 +1,362 @@
+- entity: "node"
+  type: "standard_content_page"
+  title: "Cloud Execution Framework"
+  status: 1
+  uid: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>The journey to the Cloud is unique for every company. We’ve taken best practices from leading public cloud providers and built our Cloud Execution Framework – an iterative process to guide you on your specific journey using a proven pattern to success.<br />
+        	<br />
+        	Mapping the Journey is the first and most important part in the Cloud Execution Framework process. It starts with answering a few key questions.</p>
+        <ul>
+        	<li>
+        		Where are you today?</li>
+        	<li>
+        		Where do you want to go?</li>
+        	<li>
+        		What are your business priorities?</li>
+        	<li>
+        		What are the projects you want to move into the Cloud?</li>
+        	<li>
+        		When do you want these projects to be in the Cloud?</li>
+        	<li>
+        		Are there any restrictions (e.g. technology choices, customer commitments, regulatory, etc)?</li>
+        </ul>
+        <p>The journey to the Cloud does not look the same for every business. This initial exercise is to help you map the journey to your timeline and your priorities. Your business may have processes in place that make parts of the journey very simple, but you may also have gaps that will require more focus. The end result is an agreed-upon Roadmap of iterative processes.<br />
+        	<br />
+        	<strong>One Cloud Execution Framework, Six Unique ViewPoints</strong><br />
+        	Moving to the Cloud can be complex. The Cloud Execution Framework adds structure to the complexity by breaking it down into six easy-to-understand ViewPoints. ViewPoints are based on various stakeholders’ perspectives and address the objectives and concerns that come from relevant partners and team members.</p>
+  field_exclude_title_from_display: 0
+  field_hero:
+    - entity: "paragraph"
+      type: "hero_item"
+#      field_title: ""
+#      field_text: ""
+#      field_cta:
+#        - uri: 'http://www.kinect-consulting.com'
+#          title: 'CTA text'
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "aboutHero_0.jpg"
+          alt: "About Hero Image"
+  field_paragraphs:
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Management"
+      field_text: "The Management ViewPoint is focused on optimizing the business benefit from the Cloud. This ViewPoint is designed to help leadership understand the business changes needed to take full advantage of the Cloud and to make sure that IT investments are aligned with the business-required outcomes."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage1.jpg"
+          alt: "Cloud Execution Framework"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Organizational"
+      field_text: "The Organizational ViewPoint is all about people. Moving into the Cloud may require changes to organizational structures. There may be a deficit of staff skills and competencies. Depending on the level of change the Cloud creates, change management could be a crucial part of the process. This ViewPoint assists in understanding what is needed and when."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage2.jpg"
+          alt: "Cloud Execution Framework"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Governance"
+      field_text: "The Governance ViewPoint is an essential and often neglected part of the Cloud Execution Framework. As businesses move to the Cloud, this ViewPoint helps you understand how to control access, sprawl, and costs within the cloud environment."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage3.jpg"
+          alt: "Cloud Execution Framework"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Technology"
+      field_text: "Technology is the enabler of this journey. There are many options, many directions, and many choices. The focus of the Technology ViewPoint is to help you make the right decisions for your business and define a technical architecture that best fits your needs."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage4.jpg"
+          alt: "Cloud Execution Framework"
+- entity: "node"
+  type: "standard_content_page"
+  title: "Cloud Execution Framework"
+  path:
+    - pathauto: false
+      alias: '/cloud-execution-framework'
+
+- entity: "node"
+  type: "standard_content_page"
+  title: "Technical Services"
+  status: 1
+  uid: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>Our core technical expertise is designing highly secure, reliable, scaleable, performant, flexible and cost efficient architectures for the cloud. Our goal is not to provide a unique service, but to provide the right solution for your unique business requirements.</p>
+  field_exclude_title_from_display: 0
+  field_hero:
+    - entity: "paragraph"
+      type: "hero_item"
+      #      field_title: ""
+      #      field_text: ""
+      #      field_cta:
+      #        - uri: 'http://www.kinect-consulting.com'
+      #          title: 'CTA text'
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "techherotemp.jpg"
+          alt: "tech hero"
+  field_paragraphs:
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Breaking the monolith"
+      field_text: "Are you considering or in the initial stages of digital transformation? Do you struggle with scalability and availability of your applications? Has it become increasingly more difficult to deploy and scale your systems? It's not the question of \"if\", but rather the question of \"when\" traditional \"monolith\" application architecture will start costing you business. Let us help you jumpstart your digital transformation the right way, using micro-services based architecture and DevOps best practices."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "techimage1.jpg"
+          alt: "Technical Services"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Hybrid Architecture"
+      field_text: "Are you trying to test the waters with public cloud? Do you want to offload some of your technology to the public cloud? Have you outgrown your on-premise environments? Do you run weekly or monthly large scale processes and keep a lot of resources idle between the runs? Les us help you define the right architecture for your hybrid cloud initiative."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "techimage2.jpg"
+          alt: "Technical Services"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Micro-services, Event Sourcing and CQRS"
+      field_text: "Are you exploring ways to streamline development and deployment process? Do you want your services to scale independently? Do you have strict auditing requirements? Is your write load much higher than your read load or vice versa? Micro-services in conjunction with event sourcing and CQRS will solve all the above requirements. But doing this right is not trivial. Each use case requires specific design patterns and trade-offs. Let us help you jumpstart your new flexible architecture."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "image4.jpg"
+          alt: "Technical Services"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Big/Fast Data and Analytics"
+      field_text: "Big/fast data is no longer just a bunch of buzzwords. Businesses that don't collect all the data, all the time and don't capitalize on that data may be losing their competitive advantage. Ingesting large volumes of data from multiple sources at real time, enriching, cleansing and sanitizing, analyzing and storing results for immediate consumption by various business units, customers and partners is not an easy endeavor. We know what it takes to build the right data pipeline without going overboard, while allowing your data platform to evolve as your business needs change."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "image3.jpg"
+          alt: "Technical Services"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Serverless Architecture"
+      field_text: "Serverless architectures are starting to make their way to both public and private clouds. Deciding on which use cases fit this paradigm is very important. Businesses should start slowly, one use case at a time. Let us guide you through this new and exciting architectural approach."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "techimage1.jpg"
+          alt: "Technical Services"
+- entity: "node"
+  type: "standard_content_page"
+  title: "Technical Services"
+  path:
+    - pathauto: false
+      alias: '/technical-services'
+
+- entity: "node"
+  type: "standard_content_page"
+  title: "Cloud Trusted Advisor"
+  status: 1
+  uid: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p>In addition to our <a href="https://www.kinect-consulting.com/cloud-execution-framework" target="_blank">Cloud Execution Framework</a>, we offer our Cloud Trusted Adviser Service. The Cloud Trusted Advisor Service is a check point on your journey to the Cloud.<br />
+        	<br />
+        	It is important to verify that you are implementing best practices. Or you may be ready to take the next step after an initial cloud project. The Cloud Trusted Advisor Service allows you to pull from a team of experts to verify you are on the intended path.<br />
+        	<br />
+        	The Cloud Trusted Advisor Service can be customized for your needs, but here are some of the primary services:</p>
+  field_exclude_title_from_display: 0
+  field_hero:
+    - entity: "paragraph"
+      type: "hero_item"
+      #      field_title: ""
+      #      field_text: ""
+      #      field_cta:
+      #        - uri: 'http://www.kinect-consulting.com'
+      #          title: 'CTA text'
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "TustedAdvisor.jpg"
+          alt: "Trusted Advisor"
+  field_paragraphs:
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Strategy Review"
+      field_text: "Do you have a cloud strategy? Many companies don’t, many have parts of one, or maybe you realize a review with an expert is needed to validate the strategy is really meeting the business goals. Don’t guess! Let us help you create or validate your strategy.What are the challenges or concerns with your current strategy? Often companies don’t know where to start. We can help.Do you have a Well Defined and actionable direction? You will when you are done with the Cloud Trusted Advisor! We help you build a go forward strategy and the steps you need to take to implement."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "TrustedAdvisor2.jpg"
+          alt: "Cloud Trusted Advisor"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Cloud Maturity Assessment"
+      field_text: "Do you understand what a mature Cloud execution would look like for your organization? Do you understand where you are in the process? How far along are you? We work with companies of all sizes and we can help you understand where you rate in overall cloud maturity."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "TrustedAdvisor3.jpg"
+          alt: "Cloud Trusted Advisor"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Architecture Review"
+      field_text: "Are you taking advantage of Cloud architectures? Designing applications to take advantage of the elasticity and automation available in the Cloud takes a different set of skills. The ability to scale up and down can be easily automated in the Cloud, but can your application architecture handle this new found auto-scaling?"
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "TrustedAdvisor4.jpg"
+          alt: "Cloud Trusted Advisor"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Security Review"
+      field_text: "Security teams have a really good understanding on how to secure a data center. Security teams without Cloud experience say “No” a lot! Let us help you get the team to “YES”. Cloud security is different. Some things are easier, however, there are new places to watch. We will help you build a cloud security policy to take the velocity of the cloud in to account."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "TrustedAdvisor12.jpg"
+          alt: "Cloud Trusted Advisor"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Cost Analysis"
+      field_text: "One of the most interesting things about Cloud platforms today is that they are actually getting less expensive over time. There are many ways to implement Cloud platforms at a lower cost than just 2 years ago. Let us help your teams design for cost optimization. One really big change the Cloud enables, is very detailed cost visibility. We will show you how to see cost better, design to improve cost, and even make applications cost aware!"
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "TrustAdvisor5.jpg"
+          alt: "Cloud Trusted Advisor"
+- entity: "node"
+  type: "standard_content_page"
+  title: "Cloud Trusted Advisor"
+  path:
+    - pathauto: false
+      alias: '/cloud-trusted-advisor'
+
+- entity: "node"
+  type: "standard_content_page"
+  title: "About Us"
+  status: 1
+  uid: 1
+  body:
+    - format: "full_html"
+      value: |
+        <div style="margin-left:20%;margin-right:20%">
+        	<h1>
+        		What We Do</h1>
+        	<p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">The Cloud has brought a lot of change to modern IT. &nbsp;No longer limited by the capital outlay for hardware, data centers, and the need to manually manage infrastructure, the Cloud has brought an elasticity and automation to the IT world that we have never seen before. &nbsp;Old ways of architecting and developing applications no longer apply in this new dynamic.</span></p>
+        	<p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Kinect Consulting offers application architecture consulting and development for medium to large companies that are looking for specific experience in moving an enterprise to the Cloud.</span></span></p>
+        	<p>&nbsp;</p>
+        	<h1>
+        		About Kinect Consulting</h1>
+        	<p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Kinect Consulting was formed by spinning off the IT Architecture and Strategy leadership from a Fortune 100 company, World Fuel Services. &nbsp;Word Fuel Service, had embarked on a leading-edge journey to developing software specifically to take advantage of both Native and Hybrid Cloud services. This was not a journey of "lift and shift" to the Cloud, this was a journey of taking full advantage of all the Public Cloud has to offer as a platform. World Fuel Services is Kinect Consulting's largest client.</span></span></p>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h1 class="rtecenter">
+        	<span style="font-size:36px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Leadership Team</strong></span></span></h1>
+        <table align="center" border="5" cellpadding="5" cellspacing="5" class="two-cols non-style" style="width: 80%; margin: 0 auto;">
+        	<tbody>
+        		<tr>
+        			<td>
+        				<p align="left"><img align="left" src="/themes/custom/kinect_consulting/images/Aaron-Moore.jpg" style="width: 200px; height: 200px;padding: 0 12px 8px 0;" />Aaron Moore brings 26 plus years of multifaceted IT experience to Kinect Consulting. Starting his career at IBM at age 20, Aaron has experience in nearly all aspects of IT, from networking, hardware, operations, and development, add project management, databases, and executive leadership to the mix. It’s hard to find a more well-rounded tech leader. Aaron founded his first tech consulting startup in 1993, and later worked in IT leadership for some of the most respected companies in the world including E.ON, GE, and Electronic Arts. Aaron’s strength is in his passion for business solutions, bringing knowledge of several industries including energy, manufacturing, distribution, electric and gas utilities, trading and risk management, and hospitality.</p>
+        				<p class="rtejustify">Aaron has assisted many organizations with application modernization cycles over his career, working not only on the technical aspects, but also helping business leaders understand the impact technology changes will have on their organization.</p>
+        				<p class="rtejustify">As the leader and Vice President of World Fuel Services Architecture team, he led the company’s transformation into the Cloud and completely changed how applications were designed, developed, and deployed. With a focus on reducing time-to-market and overall cost, Aaron implemented a new open source stack, and introduced the concepts and culture of DevOps automation into the organization as part of their journey to the Cloud.</p>
+        				<p class="rtejustify">After spinning off Kinect Consulting from World Fuel, Aaron’s attention is on building a customer focused organization of technical thought leaders with the goal of assisting companies on their journey to the Cloud and onto the next technical revolution.</p>
+        			</td>
+        			<td>
+        				<p align="left"><img align="left" src="/themes/custom/kinect_consulting/images/Igor-Royzis.jpg" style="width: 200px; height: 200px;padding: 0 12px 8px 0;" /> Igor Royzis has over 20 years of Fortune 100 and startup experience delivering and managing solutions for Software, Investment Banking, Trading, Portfolio Risk Management, Mergers &amp; Acquisitions, E-commerce, Wholesale and Distribution industries. He is passionate about guiding enterprises in their technology transformation journey, building complex software platforms, designing web, mobile and data solutions, turning ideas into reality, and helping businesses choose and apply appropriate tools and technologies to successfully grow, compete and succeed.</p>
+        				<p class="rtejustify">Igor Royzis pioneered the use of open source technologies at Chase Manhattan Bank and designed the first Service Oriented Architecture based platform at Merrill Lynch. He started his own technology consulting company in 2001 and designed and built several sophisticated financial trading platforms and risk management systems for Bank of America, Merrill Lynch and Lehman Brothers. As CTO, Igor Royzis has successfully built three technology and consulting startups since 2005. He co-founded and built world’s largest Mergers &amp; Acquisitions platform, DealNexus, in 2012, which consequently was acquired by a NYSE traded public company. In 2015, Igor Royzis was retained by the CIO of World Fuel Services, a Fortune 100 company, to lead an ambitious and complex re-architecture initiative as part of company’s Digital Transformation. He successfully designed World Fuel’s new cloud native architecture and guided development teams through implementation on Amazon Web Services public cloud.</p>
+        			</td>
+        		</tr>
+        	</tbody>
+        </table>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+  field_exclude_title_from_display: 0
+- entity: "node"
+  type: "standard_content_page"
+  title: "About Us"
+  path:
+    - pathauto: false
+      alias: '/about-kinect-consulting'
+
+- entity: "node"
+  type: "standard_content_page"
+  title: "Kinect Consulting Contact Us Form"
+  status: 1
+  uid: 1
+  body:
+    - format: "full_html"
+      value: |
+        <p class="rtecenter"><span style="font-size:24px;">Contact Information</span></p>
+  field_exclude_title_from_display: 1
+  field_paragraphs:
+    - entity: "paragraph"
+      type: "iframe"
+      field_url:
+        - uri: 'https://mail-wfscorp.com/kinectconsulting-contactus'
+      field_width: "100%"
+      field_height: "900"
+- entity: "node"
+  type: "standard_content_page"
+  title: "Kinect Consulting Contact Us Form"
+  path:
+    - pathauto: false
+      alias: '/kinect-consulting-contact-us-form'
