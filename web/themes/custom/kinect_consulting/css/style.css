@@ -25,7 +25,6 @@
 header .container {
     width: 100%;
     max-width: 1680px;
-    border-bottom: 1px solid rgba(20,35,64,.07);
 }
 .navbar-header {
     background-color: #FFF;
