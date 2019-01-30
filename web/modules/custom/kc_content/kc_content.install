@@ -19,4 +19,8 @@ function kc_content_install() {
     ->setContentPath($path);
   $service = \Drupal::service('yaml_content.content_loader');
   $service->loadContent('block_content_entity.yml');
+  $service->loadContent('taxonomy_term_authors.yml');
+  $service->loadContent('taxonomy_term_categories.yml');
+  $service->loadContent('node_article_entity.yml');
+  $service->loadContent('node_standard_content_page_entity.yml');
 }

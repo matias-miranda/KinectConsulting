@@ -7,8 +7,8 @@
       {{ content.getCreatedTime|date('U')|format_date('month_day') }} -
       Category:
       <a
-        href="articles?category={{ content.field_tags['#items'].getString() }}">
-        {{ content.field_tags.0 }}
+        href="articles?category={{ content.field_category['#items'].getString() }}">
+        {{ content.field_category.0 }}
       </a>
     </div>
     <h2 class="article-title">
