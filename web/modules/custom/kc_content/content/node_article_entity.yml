@@ -1,0 +1,86 @@
+- entity: "node"
+  type: "article"
+  title: "Customization with Personalization in Angular"
+  body:
+    - format: "full_html"
+      value: |
+        <p>Customization and Personalization are critical components to providing an enriching user experience for any modern web/mobile application(s). Intent of this first post of the series is to provide an overview on the usage of Customization with Personalization to build powerful data, UX rich Angular applications</p>
+        <p>&nbsp;</p>
+        <h3>
+        	<b>Customization with Personalization</b></h3>
+        <p>People often use the words customization and personalization interchangeably, actually they serve different purposes towards the common goal i.e., providing a rich experience to the user of the application.</p>
+        <p>Applications like Yahoo, Azure Portal ... supports customization by letting the user of system decide the content, layout or functionality. This approach has an advantage as it’s the user who decides how his application should serve him. At the same time, users want their applications to be smart enough to offer suggestions/recommendations based on:</p>
+        <ul>
+        	<li>
+        		Location</li>
+        	<li>
+        		Preference</li>
+        	<li>
+        		Behavior over a course of time,</li>
+        	<li>
+        		Profile</li>
+        	<li>
+        		Role</li>
+        	<li>
+        		Prediction</li>
+        </ul>
+        <p>This is where Personalization shines. This scenario is most prevalent in applications like Amazon, eBay, Hulu, Netflix... Predictive Content Personalization based on machine learning algorithms, pattern matching are becoming increasingly popular &amp; would soon become indispensable for all the applications</p>
+        <p>We could build powerful, experience rich and smart applications by combining these two concepts. Let’s discuss about a simple use case to support ‘Role’ based personalization in an enterprise application</p>
+        <p>&nbsp;</p>
+        <h3>
+        	<b>Role based Personalization </b></h3>
+        <p>Imagine a company is in need of building its own IT Service Requests application using <a href="https://angular.io/">Angular</a> (skipping the application stack details for simplicity) secured by Identity and Access Management (IAM) solutions such as <a href="https://aws.amazon.com/cognito/">AWS Cognito,</a> <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis">Azure</a><a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis"> AD</a>, <a href="https://auth0.com/">Auth0</a>, <a href="https://stormpath.com/">Stormpath</a>, <a href="http://www.keycloak.org/">Keycloak</a>.., one of the most common use cases for such a system would be :<br />
+        	<br />
+        	<i>Developer on the project would like to request for software/hardware per his needs and<i> </i>Manager of the project shall approve the request before it can be serviced by an IT person</i></p>
+        <p>At a very high level let’s list out the steps involved to implement the above use case:</p>
+        <ul>
+        	<li>
+        		Selected Identity &amp; Access Management (IAM) solution provider shall have two composite roles configured - one for Developer and one for Manager</li>
+        	<li>
+        		Angular shall present different view/content based on the user’s role</li>
+        </ul>
+        <ul>
+        	<li>
+        		If the user logged into the application is a Developer, he should only be able to request for a resource and shall not be able to view the approval process</li>
+        	<li>
+        		If the user logged into the application is a Manager, he should have access to request for a resource (of course for his needs) and shall also be able to view and initiate the approval workflow</li>
+        </ul>
+        <p>When we design and implement the application by using the above concepts, we could easily achieve role based personalization that would present:</p>
+        <ul>
+        	<li>
+        		Content based on user’s role/access level</li>
+        	<li>
+        		Experience customized (without any inputs) per user</li>
+        	<li>
+        		Recommendations based on the role</li>
+        </ul>
+        <h3>
+        	Conclusion</h3>
+        <p>We did a quick overview of customization , Personalization and their importance in applications , it' just the tip of the iceberg though</p>
+        <p>We'll dive deeper into Angular design and implementation details to achieve customization with different personalization options in the upcoming blog posts , STAY TUNED</p>
+        <hr />
+        <p><i>Phani Kiran Donthi C<i> </i>is a Solutions Architect at Kinect Consulting. Phani specializes<i> </i>in enterprise application architecture, design and implementation involving Angular, .NET, Node, Express,TypeScript, NativeScript, Azure and AWS</i><br />
+        	<br />
+        	<u><a href="http://www.kinect-consulting.com/">www.kinect-consulting.com</a></u><br />
+        	<u><a href="mailto:phanikirandonthic@kinect-consulting.com">phanikirandonthic@kinect-consulting.com</a></u></p>
+  field_author:
+    - "#process":
+        callback: "reference"
+        args:
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Phani Kiran Donthi C"
+  field_category:
+    - "#process":
+        callback: "reference"
+        args:
+          - "taxonomy_term"
+          - vid: "categories"
+            name: "JavaScript"
+  field_image:
+    - '#process':
+        callback: 'file'
+        args:
+          - 'image'
+          - filename: 'wysiwig.png'
+      alt: 'Personalization in Angular'
