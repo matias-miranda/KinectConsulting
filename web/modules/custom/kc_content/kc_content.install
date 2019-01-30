@@ -24,3 +24,12 @@ function kc_content_install() {
   $service->loadContent('node_article_entity.yml');
   $service->loadContent('node_standard_content_page_entity.yml');
 }
+
+/**
+ * Implements hook_update_8001.
+ *
+ * Update content (Creates Home Page)
+ */
+function kc_content_update_8001() {
+  kc_content_install();
+}
