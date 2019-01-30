@@ -21,7 +21,7 @@
     - entity: "paragraph"
       type: "hero_item"
       field_cta:
-        - uri: 'https://www.kinect-consulting.com/cloud-execution-framework'
+        - uri: 'internal:/cloud-execution-framework'
           title: 'LEARN ABOUT EXECUTIVE SERVICES'
       field_image:
         - "#process":
@@ -33,7 +33,7 @@
     - entity: "paragraph"
       type: "hero_item"
       field_cta:
-        - uri: 'https://www.kinect-consulting.com/technical-services'
+        - uri: 'internal:/technical-services'
           title: 'LEARN ABOUT TECHNICAL SERVICES'
       field_image:
         - "#process":
@@ -87,7 +87,7 @@
       field_title: "We know how to move an enterprise to the cloud because we’ve done it before."
       field_text: "Let us show you the way. "
       field_cta:
-        - uri: 'https://www.kinect-consulting.com/kinect-consulting-contact-us-form'
+        - uri: 'internal:/kinect-consulting-contact-us-form'
           title: 'CONTACT US TO LEARN MORE'
       field_paragraph_style: "dark"
 - entity: "node"
