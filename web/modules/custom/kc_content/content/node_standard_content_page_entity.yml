@@ -294,42 +294,49 @@
   title: "About Us"
   status: 1
   uid: 1
-  body:
-    - format: "full_html"
-      value: |
-        <div style="margin-left:20%;margin-right:20%">
-        	<h1>
-        		What We Do</h1>
-        	<p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">The Cloud has brought a lot of change to modern IT. &nbsp;No longer limited by the capital outlay for hardware, data centers, and the need to manually manage infrastructure, the Cloud has brought an elasticity and automation to the IT world that we have never seen before. &nbsp;Old ways of architecting and developing applications no longer apply in this new dynamic.</span></p>
-        	<p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Kinect Consulting offers application architecture consulting and development for medium to large companies that are looking for specific experience in moving an enterprise to the Cloud.</span></span></p>
-        	<p>&nbsp;</p>
-        	<h1>
-        		About Kinect Consulting</h1>
-        	<p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Kinect Consulting was formed by spinning off the IT Architecture and Strategy leadership from a Fortune 100 company, World Fuel Services. &nbsp;Word Fuel Service, had embarked on a leading-edge journey to developing software specifically to take advantage of both Native and Hybrid Cloud services. This was not a journey of "lift and shift" to the Cloud, this was a journey of taking full advantage of all the Public Cloud has to offer as a platform. World Fuel Services is Kinect Consulting's largest client.</span></span></p>
-        </div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <h1 class="rtecenter">
-        	<span style="font-size:36px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Leadership Team</strong></span></span></h1>
-        <table align="center" border="5" cellpadding="5" cellspacing="5" class="two-cols non-style" style="width: 80%; margin: 0 auto;">
-        	<tbody>
-        		<tr>
-        			<td>
-        				<p align="left"><img align="left" src="/themes/custom/kinect_consulting/images/Aaron-Moore.jpg" style="width: 200px; height: 200px;padding: 0 12px 8px 0;" />Aaron Moore brings 26 plus years of multifaceted IT experience to Kinect Consulting. Starting his career at IBM at age 20, Aaron has experience in nearly all aspects of IT, from networking, hardware, operations, and development, add project management, databases, and executive leadership to the mix. It’s hard to find a more well-rounded tech leader. Aaron founded his first tech consulting startup in 1993, and later worked in IT leadership for some of the most respected companies in the world including E.ON, GE, and Electronic Arts. Aaron’s strength is in his passion for business solutions, bringing knowledge of several industries including energy, manufacturing, distribution, electric and gas utilities, trading and risk management, and hospitality.</p>
-        				<p class="rtejustify">Aaron has assisted many organizations with application modernization cycles over his career, working not only on the technical aspects, but also helping business leaders understand the impact technology changes will have on their organization.</p>
-        				<p class="rtejustify">As the leader and Vice President of World Fuel Services Architecture team, he led the company’s transformation into the Cloud and completely changed how applications were designed, developed, and deployed. With a focus on reducing time-to-market and overall cost, Aaron implemented a new open source stack, and introduced the concepts and culture of DevOps automation into the organization as part of their journey to the Cloud.</p>
-        				<p class="rtejustify">After spinning off Kinect Consulting from World Fuel, Aaron’s attention is on building a customer focused organization of technical thought leaders with the goal of assisting companies on their journey to the Cloud and onto the next technical revolution.</p>
-        			</td>
-        			<td>
-        				<p align="left"><img align="left" src="/themes/custom/kinect_consulting/images/Igor-Royzis.jpg" style="width: 200px; height: 200px;padding: 0 12px 8px 0;" /> Igor Royzis has over 20 years of Fortune 100 and startup experience delivering and managing solutions for Software, Investment Banking, Trading, Portfolio Risk Management, Mergers &amp; Acquisitions, E-commerce, Wholesale and Distribution industries. He is passionate about guiding enterprises in their technology transformation journey, building complex software platforms, designing web, mobile and data solutions, turning ideas into reality, and helping businesses choose and apply appropriate tools and technologies to successfully grow, compete and succeed.</p>
-        				<p class="rtejustify">Igor Royzis pioneered the use of open source technologies at Chase Manhattan Bank and designed the first Service Oriented Architecture based platform at Merrill Lynch. He started his own technology consulting company in 2001 and designed and built several sophisticated financial trading platforms and risk management systems for Bank of America, Merrill Lynch and Lehman Brothers. As CTO, Igor Royzis has successfully built three technology and consulting startups since 2005. He co-founded and built world’s largest Mergers &amp; Acquisitions platform, DealNexus, in 2012, which consequently was acquired by a NYSE traded public company. In 2015, Igor Royzis was retained by the CIO of World Fuel Services, a Fortune 100 company, to lead an ambitious and complex re-architecture initiative as part of company’s Digital Transformation. He successfully designed World Fuel’s new cloud native architecture and guided development teams through implementation on Amazon Web Services public cloud.</p>
-        			</td>
-        		</tr>
-        	</tbody>
-        </table>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
   field_exclude_title_from_display: 0
+  field_paragraphs:
+    - entity: "paragraph"
+      type: "content"
+      field_paragraph_style: "color-verypale"
+      field_body:
+        - format: "full_html"
+          value: |
+            <div style="margin-left:20%;margin-right:20%">
+                <h1>
+                    What We Do</h1>
+                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">The Cloud has brought a lot of change to modern IT. &nbsp;No longer limited by the capital outlay for hardware, data centers, and the need to manually manage infrastructure, the Cloud has brought an elasticity and automation to the IT world that we have never seen before. &nbsp;Old ways of architecting and developing applications no longer apply in this new dynamic.</span></p>
+                <p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Kinect Consulting offers application architecture consulting and development for medium to large companies that are looking for specific experience in moving an enterprise to the Cloud.</span></span></p>
+                <p>&nbsp;</p>
+                <h1>
+                    About Kinect Consulting</h1>
+                <p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Kinect Consulting was formed by spinning off the IT Architecture and Strategy leadership from a Fortune 100 company, World Fuel Services. &nbsp;Word Fuel Service, had embarked on a leading-edge journey to developing software specifically to take advantage of both Native and Hybrid Cloud services. This was not a journey of "lift and shift" to the Cloud, this was a journey of taking full advantage of all the Public Cloud has to offer as a platform. World Fuel Services is Kinect Consulting's largest client.</span></span></p>
+            </div>
+            <p>&nbsp;</p>
+    - entity: "paragraph"
+      type: "content"
+      field_body:
+        - format: "full_html"
+          value: |
+            <h1 class="rtecenter">
+              <span style="font-size:36px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Leadership Team</strong></span></span></h1>
+              <table align="center" border="5" cellpadding="5" cellspacing="5" class="two-cols non-style" style="width: 80%; margin: 0 auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p align="left"><img align="left" src="/themes/custom/kinect_consulting/images/Aaron-Moore.jpg" style="width: 200px; height: 200px;padding: 0 12px 8px 0;" />Aaron Moore brings 26 plus years of multifaceted IT experience to Kinect Consulting. Starting his career at IBM at age 20, Aaron has experience in nearly all aspects of IT, from networking, hardware, operations, and development, add project management, databases, and executive leadership to the mix. It’s hard to find a more well-rounded tech leader. Aaron founded his first tech consulting startup in 1993, and later worked in IT leadership for some of the most respected companies in the world including E.ON, GE, and Electronic Arts. Aaron’s strength is in his passion for business solutions, bringing knowledge of several industries including energy, manufacturing, distribution, electric and gas utilities, trading and risk management, and hospitality.</p>
+                            <p class="rtejustify">Aaron has assisted many organizations with application modernization cycles over his career, working not only on the technical aspects, but also helping business leaders understand the impact technology changes will have on their organization.</p>
+                            <p class="rtejustify">As the leader and Vice President of World Fuel Services Architecture team, he led the company’s transformation into the Cloud and completely changed how applications were designed, developed, and deployed. With a focus on reducing time-to-market and overall cost, Aaron implemented a new open source stack, and introduced the concepts and culture of DevOps automation into the organization as part of their journey to the Cloud.</p>
+                            <p class="rtejustify">After spinning off Kinect Consulting from World Fuel, Aaron’s attention is on building a customer focused organization of technical thought leaders with the goal of assisting companies on their journey to the Cloud and onto the next technical revolution.</p>
+                        </td>
+                        <td>
+                            <p align="left"><img align="left" src="/themes/custom/kinect_consulting/images/Igor-Royzis.jpg" style="width: 200px; height: 200px;padding: 0 12px 8px 0;" /> Igor Royzis has over 20 years of Fortune 100 and startup experience delivering and managing solutions for Software, Investment Banking, Trading, Portfolio Risk Management, Mergers &amp; Acquisitions, E-commerce, Wholesale and Distribution industries. He is passionate about guiding enterprises in their technology transformation journey, building complex software platforms, designing web, mobile and data solutions, turning ideas into reality, and helping businesses choose and apply appropriate tools and technologies to successfully grow, compete and succeed.</p>
+                            <p class="rtejustify">Igor Royzis pioneered the use of open source technologies at Chase Manhattan Bank and designed the first Service Oriented Architecture based platform at Merrill Lynch. He started his own technology consulting company in 2001 and designed and built several sophisticated financial trading platforms and risk management systems for Bank of America, Merrill Lynch and Lehman Brothers. As CTO, Igor Royzis has successfully built three technology and consulting startups since 2005. He co-founded and built world’s largest Mergers &amp; Acquisitions platform, DealNexus, in 2012, which consequently was acquired by a NYSE traded public company. In 2015, Igor Royzis was retained by the CIO of World Fuel Services, a Fortune 100 company, to lead an ambitious and complex re-architecture initiative as part of company’s Digital Transformation. He successfully designed World Fuel’s new cloud native architecture and guided development teams through implementation on Amazon Web Services public cloud.</p>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <p>&nbsp;</p>
 - entity: "node"
   type: "standard_content_page"
   title: "About Us"
