@@ -24,3 +24,26 @@ function kc_content_install() {
   $service->loadContent('node_article_entity.yml');
   $service->loadContent('node_standard_content_page_entity.yml');
 }
+
+/**
+ * Update content (Creates Home Page)
+ */
+function kc_content_update_8001() {
+  kc_content_install();
+}
+
+/**
+ * Update content (Set Internal URLs in Home Page)
+ */
+function kc_content_update_8002() {
+  $alias = \Drupal::service('path.alias_manager')
+    ->getPathByAlias('/kinect-consulting');
+  $params = \Drupal\Core\Url::fromUri("internal:" . $alias)
+    ->getRouteParameters();
+  $entity_type = key($params);
+  $node = \Drupal::entityTypeManager()
+    ->getStorage($entity_type)
+    ->load($params[$entity_type]);
+  $node->delete();
+  kc_content_install();
+}

@@ -1,5 +1,104 @@
 - entity: "node"
   type: "standard_content_page"
+  title: "Kinect Consulting"
+  status: 1
+  uid: 1
+  body:
+    - format: "full_html"
+      value: |
+        <div>
+        	<div class="rtecenter" style="font-size: 40px">
+        		Kinect Consulting helps companies <strong style="color:#00ACF2">transform</strong> and <strong style="color:#00ACF2">modernize</strong></div>
+        	<div class="rtecenter" style="font-size: 30px">
+        		to <strong style="color:#00ACF2">reduce time-to-market</strong>, overall <strong style="color:#00ACF2">cost</strong>, and <strong style="color:#00ACF2">uncertainty</strong></div>
+        	<div class="rtecenter" style="font-size: 30px">
+        		along&nbsp;their journey to the Cloud.</div>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+  field_exclude_title_from_display: 1
+  field_hero:
+    - entity: "paragraph"
+      type: "hero_item"
+      field_cta:
+        - uri: 'internal:/cloud-execution-framework'
+          title: 'LEARN ABOUT EXECUTIVE SERVICES'
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "Homepage1.jpg"
+          alt: "Homepage"
+    - entity: "paragraph"
+      type: "hero_item"
+      field_cta:
+        - uri: 'internal:/technical-services'
+          title: 'LEARN ABOUT TECHNICAL SERVICES'
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "homepage2.jpg"
+          alt: "Homepage"
+  field_paragraphs:
+    - entity: "paragraph"
+      type: "content"
+      field_body:
+        - format: "full_html"
+          value: |
+            <div class="row text-align-center">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <p><img alt="" src="/themes/custom/kinect_consulting/images/391514-cloud-network-re.png" style="width: 150px; height: 150px;" /></p>
+                  <p><a href="https://www.kinect-consulting.com/cloud-execution-framework"><strong style="text-align: center;">Cloud Execution Framework</strong></a></p>
+                  <p>The journey to the Cloud is unique for every company. We’ve taken best practices from leading public cloud providers and built our Cloud Execution Framework – an iterative process to guide you on your specific journey.</p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <p><img alt="" src="/themes/custom/kinect_consulting/images/cloudgearoption.png" style="width: 150px; height: 150px;" /></p>
+                  <p><a href="https://www.kinect-consulting.com/technical-services"><strong>Cloud Technical Services</strong></a></p>
+                  <p>Your goal is highly secure, reliable, scaleable, performant, flexible and cost efficient solutions - our goal is to help you get there by designing for your unique business requirements.</p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <p><img alt="" src="/themes/custom/kinect_consulting/images/833580-checkmark-cloud-.png" style="width: 150px; height: 150px;" /></p>
+                  <p><a href="https://www.kinect-consulting.com/cloud-trusted-advisor"><strong>Cloud Trusted Advisor</strong></a></p>
+                  <p>The Cloud Trusted Advisor Service is a check point on your journey to the Cloud. It is important to verify that you are implementing best practices.</p>
+              </div>
+            </div>
+            <div class="row text-align-center">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <p><img alt="" src="/themes/custom/kinect_consulting/images/833579-break-conflict-d.png" style="width: 150px; height: 150px;" /></p>
+                  <p><strong style="text-align: center;">Digital Transformation</strong></p>
+                  <p>Digital Transformation is about letting people leverage technological advancements to positively impact all aspects of business, and not just about the technology itself. It is about embracing the constant change and innovating to be a leader in your industry.</p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <p><img alt="" src="/themes/custom/kinect_consulting/images/364022-configuration-cu.png" style="width: 150px; height: 150px;" /></p>
+                  <p><strong>IT Modernization</strong></p>
+                  <p>Advancements in technology change people's expectations in terms of performance, efficiency, cost and maintainability of IT solutions. Modern technologies demand new approaches and development philosophy to take full advantage of cloud offerings. Let us help you on your IT modernization journey</p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <p><img alt="" src="/themes/custom/kinect_consulting/images/391492-earth-gear-globa.png" style="width: 150px; height: 150px;" /></p>
+                  <p><strong>Elastic Infrastructure</strong></p>
+                  <p>The ability of infrastructure to dynamically adapt to needed capacity is where the cloud really flexes its power. Elastic Scale means Elastic Cost. Are you taking advantage of the elastic cloud?</p>
+              </div>
+            </div>
+    - entity: "paragraph"
+      type: "hero_item"
+      field_title: "We know how to move an enterprise to the cloud because we’ve done it before."
+      field_text: "Let us show you the way. "
+      field_cta:
+        - uri: 'internal:/kinect-consulting-contact-us-form'
+          title: 'CONTACT US TO LEARN MORE'
+      field_paragraph_style: "dark"
+- entity: "node"
+  type: "standard_content_page"
+  title: "Kinect Consulting"
+  path:
+    - pathauto: false
+      alias: '/kinect-consulting'
+
+- entity: "node"
+  type: "standard_content_page"
   title: "Cloud Execution Framework"
   status: 1
   uid: 1
