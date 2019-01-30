@@ -3,15 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.item_list
+    - core.entity_view_mode.node.vertical_item_list
     - field.storage.node.body
     - field.storage.node.field_author
     - field.storage.node.field_image
     - field.storage.node.field_tags
+    - image.style.290x195
     - node.type.article
     - taxonomy.vocabulary.authors
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:158f4c9f-d2f8-48fc-897e-624f1a814d17'
+    - 'taxonomy_term:tags:da5e3de1-de0e-48a0-9212-a8559a71848f'
   module:
     - image
     - node
@@ -52,7 +55,7 @@ display:
         type: basic
         options:
           submit_button: Search
-          reset_button: false
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -623,6 +626,9 @@ display:
         filters: false
         filter_groups: false
         arguments: false
+        style: false
+        row: false
+        empty: false
       filters:
         status:
           value: '1'
@@ -811,6 +817,29 @@ display:
           validate_options: {  }
           entity_type: node
           plugin_id: date_month
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: item_list
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<h3>No results</h3> '
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:
@@ -1122,6 +1151,8 @@ display:
         filters: false
         filter_groups: false
         pager: false
+        style: false
+        row: false
       fields:
         field_image:
           id: field_image
@@ -1174,7 +1205,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: 290x195
             image_link: content
           group_column: ''
           group_columns: {  }
@@ -1497,6 +1528,18 @@ display:
         options:
           items_per_page: 3
           offset: 0
+      style:
+        type: default
+        options:
+          row_class: 'col-xs-12 col-sm-6 col-md-4'
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: vertical_item_list
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
