@@ -56,6 +56,7 @@ header .container {
     text-align: right;
     top: 0;
     z-index: 200;
+    margin: 0 2rem;
 }
 .logo.navbar-btn img {
     width: 100px;
@@ -115,7 +116,7 @@ header .container {
     padding-top: 1.5rem;
 }
 .standard-content-page .field--name-body {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 p+p {
     margin-top: 10px;
@@ -125,8 +126,8 @@ p+p {
 }
 
 p {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.4;
     margin-bottom: 10px;
     margin-bottom: 1rem;
@@ -283,6 +284,9 @@ b, strong {
     .logo.navbar-btn img {
         width: 150px;
     }
+    .main-container {
+        margin-top: 55px;
+    }
     .standard-content-page .field--name-field-paragraphs {
         max-width: 1560px;
         margin: 0 auto;
@@ -294,9 +298,12 @@ b, strong {
         font-size: 16px;
         padding: 10px;
     }
-
+    .logo {
+        margin: 8px 0 0;
+        padding: 0;
+    }
     .logo.navbar-btn img {
-        width: 200px;
+        width: 193px;
     }
 }
 @media screen and (min-width:1360px) {
@@ -313,7 +320,10 @@ b, strong {
 .paragraph--type--image-text .field--name-field-image img {
     max-height: 400px;
 }
-
+.paragraph--type--image-text h4 {
+    font-family: ProximaNovaBold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+}
 @media (min-width: 992px) {
     .image-text-vertical-align {
         display: flex;
