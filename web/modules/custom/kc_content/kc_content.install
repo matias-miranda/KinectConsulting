@@ -48,6 +48,14 @@ function kc_content_update_8003() {
   kc_content_install();
 }
 
+/**
+ * Update content (Contact page)
+ */
+function kc_content_update_8004() {
+  _kc_content_delete('/kinect-consulting-contact-us-form');
+  kc_content_install();
+}
+
 function _kc_content_delete($aliases) {
   if (!is_array($aliases)) {
     $aliases = [$aliases];
