@@ -64,6 +64,13 @@ function kc_content_update_8005() {
   kc_content_install();
 }
 
+/**
+ * Update content (Create Terms and Conditions page)
+ */
+function kc_content_update_8006() {
+  kc_content_install();
+}
+
 function _kc_content_delete($aliases) {
   if (!is_array($aliases)) {
     $aliases = [$aliases];
