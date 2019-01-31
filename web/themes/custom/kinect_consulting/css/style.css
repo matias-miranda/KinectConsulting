@@ -270,14 +270,12 @@ b, strong {
     position: relative;
     min-height: 100px;
 }
-.content-wrapper {
-    margin: 0 auto;
+
+.hero-image .content-wrapper .field--name-field-cta {
     position: absolute;
-    bottom: 20px;
     left: 0;
+    bottom: 40px;
     right: 0;
-}
-.field--name-field-cta {
     text-align: center;
 }
 
@@ -477,6 +475,44 @@ b, strong {
 
 .row.article-vertical-item-list .article-created-and-category {
     margin-top: 20px;
+}
+
+.field--name-field-paragraphs .paragraph--type--hero-item {
+    margin-top: 40px;
+    margin-left: -4%;
+    margin-right: -4%;
+}
+
+.field--name-field-paragraphs .paragraph--type--hero-item .content-wrapper .field--name-field-cta {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+/* Paragraph variations */
+
+.paragraph.paragraph--style--dark .hero-wrapper .content-wrapper {
+    background-color: #142441;
+    padding-top: 40px;
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+@media screen and (max-width:414px) {
+    .paragraph.paragraph--style--dark .hero-wrapper .content-wrapper {
+        text-align: center;
+    }
+}
+
+.paragraph.paragraph--style--dark .hero-wrapper .content-wrapper h3 .field--name-field-title {
+    color: #807e7f;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.paragraph.paragraph--style--dark .hero-wrapper .content-wrapper h3 .field--name-field-text {
+    color: #0f73c4;
 }
 
 
