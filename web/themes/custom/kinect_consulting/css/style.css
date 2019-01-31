@@ -122,6 +122,29 @@ header .container {
     font-size: 1.8rem;
     color: #807e7f;
 }
+ol, ul {
+    list-style: none;
+}
+ol li:before, ul.bullets li:before, .copywide ul li:before {
+    color: #8fb3d4;
+    content: '\2022';
+    display: block;
+    font-size: inherit;
+    max-width: 0;
+    max-height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.rtecenter {
+    text-align: center;
+}
+.copywide ul li {
+    padding-left: 35px;
+    padding-left: 3.5rem;
+    color: #807e7f;
+    position: relative;
+}
 p+p {
     margin-top: 10px;
     margin-top: 1rem;
@@ -149,10 +172,11 @@ b, strong {
     max-width: 1680px;
 }
 .region-footer {
-    margin: 7rem 7rem 3rem;
+    margin: 5rem 7rem 3rem;
 }
 .region-footer nav {
     text-align: center;
+    margin-top: 4rem;
 }
 .region-footer .field--name-body {
     font-size: 12px;
@@ -168,6 +192,8 @@ b, strong {
     font-size: 18px;
     background: none;
     outline: none;
+    padding: 0;
+    margin: 0;
 }
 .address-item {
     padding-bottom: 9px;
@@ -238,6 +264,10 @@ b, strong {
 .field--name-field-hero.split > .field--item:last-child .hero-image {
     background-position: left;
 }
+.hero-image {
+    position: relative;
+    min-height: 100px;
+}
 .content-wrapper {
     margin: 0 auto;
     position: absolute;
@@ -295,7 +325,7 @@ b, strong {
     }
     .standard-content-page .field--name-field-paragraphs {
         max-width: 1560px;
-        margin: 0 auto;
+        margin: 0 6rem;
     }
 }
 @media screen and (min-width:1200px) {
@@ -334,7 +364,10 @@ b, strong {
 .paragraph--type--image-text .wrapper {
     margin: 15% 10% 10% 10%;
 }
-
+.paragraph--type--image-text > [class*="col-"] {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 @media (min-width: 992px) {
     .image-text-vertical-align {
         display: flex;
