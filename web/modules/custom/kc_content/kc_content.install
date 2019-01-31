@@ -41,7 +41,7 @@ function kc_content_update_8002() {
 }
 
 /**
- * Update content (Home Page)
+ * Update content (About Page)
  */
 function kc_content_update_8003() {
   _kc_content_delete('/about-kinect-consulting');
@@ -53,6 +53,14 @@ function kc_content_update_8003() {
  */
 function kc_content_update_8004() {
   _kc_content_delete('/kinect-consulting-contact-us-form');
+  kc_content_install();
+}
+
+/**
+ * Update content (Home Page, removes empty <p> tags in body)
+ */
+function kc_content_update_8005() {
+  _kc_content_delete('/kinect-consulting');
   kc_content_install();
 }
 

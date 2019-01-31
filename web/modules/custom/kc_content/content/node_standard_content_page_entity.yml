@@ -14,8 +14,6 @@
         	<div class="rtecenter" style="font-size: 30px">
         		along&nbsp;their journey to the Cloud.</div>
         </div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
   field_exclude_title_from_display: 1
   field_hero:
     - entity: "paragraph"
