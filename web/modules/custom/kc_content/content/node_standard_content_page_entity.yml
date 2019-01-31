@@ -473,7 +473,7 @@
       type: "iframe"
       field_url:
         - uri: 'https://mail-wfscorp.com/kinectconsulting-contactus'
-      field_width: "100%"
+      field_width: "1110"
       field_height: "900"
 - entity: "node"
   type: "standard_content_page"
