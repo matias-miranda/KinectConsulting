@@ -121,6 +121,7 @@ header .container {
 .standard-content-page .field--name-body {
     font-size: 1.8rem;
     color: #807e7f;
+
 }
 ol, ul {
     list-style: none;
@@ -144,6 +145,7 @@ ol li:before, ul.bullets li:before, .copywide ul li:before {
     padding-left: 3.5rem;
     color: #807e7f;
     position: relative;
+
 }
 p+p {
     margin-top: 10px;
