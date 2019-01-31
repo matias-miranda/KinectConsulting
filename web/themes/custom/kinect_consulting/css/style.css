@@ -481,11 +481,29 @@ b, strong {
 
 
 /* ABOUT */
+
+table.two-cols {
+    border: none;
+}
 table.two-cols td {
     width: 50%;
     padding: 0 7px;
+    color:#5a7390;
+    vertical-align: top;
 }
 table.one-col td, table.two-cols td, table.three-cols td, table.four-cols td, table.five-cols td {
     display: table-cell;
     padding: 2px 7px;
+    border: none;
+}
+.paragraph--type--content h1, .paragraph--type--content h2, .paragraph--type--content h3 {
+    font-family: ProximaNova,"Lucida Grande";
+    color:#142441;
+    font-size: 22.5px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-bottom: 3rem;
+}
+.paragraph--type--content h1 span {
+    color: #807e7f;
 }
