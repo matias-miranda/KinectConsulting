@@ -75,9 +75,19 @@ function kc_content_update_8006() {
  * Update content
  */
 function kc_content_update_8007() {
-  _kc_content_delete('/about-kinect-consulting');
-  _kc_content_delete('/cloud-execution-framework');
-  _kc_content_delete('/cloud-trusted-advisor');
+  _kc_content_delete([
+    '/about-kinect-consulting',
+    '/cloud-execution-framework',
+    '/cloud-trusted-advisor',
+  ]);
+  kc_content_install();
+}
+
+/**
+ * Update content (Contact Form iframe height)
+ */
+function kc_content_update_8008() {
+  _kc_content_delete('/kinect-consulting-contact-us-form');
   kc_content_install();
 }
 
