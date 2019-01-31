@@ -71,6 +71,16 @@ function kc_content_update_8006() {
   kc_content_install();
 }
 
+/**
+ * Update content
+ */
+function kc_content_update_8007() {
+  _kc_content_delete('/about-kinect-consulting');
+  _kc_content_delete('/cloud-execution-framework');
+  _kc_content_delete('/cloud-trusted-advisor');
+  kc_content_install();
+}
+
 function _kc_content_delete($aliases) {
   if (!is_array($aliases)) {
     $aliases = [$aliases];

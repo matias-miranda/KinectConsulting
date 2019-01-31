@@ -499,7 +499,9 @@ b, strong {
     padding-left: 14%;
     padding-right: 14%;
 }
-
+.paragraph--type--content .field--name-field-body {
+    padding: 0 9%;
+}
 @media screen and (max-width:414px) {
     .paragraph.paragraph--style--dark .hero-wrapper .content-wrapper {
         text-align: center;
