@@ -56,6 +56,14 @@ function kc_content_update_8004() {
   kc_content_install();
 }
 
+/**
+ * Update content (Home Page, removes empty <p> tags in body)
+ */
+function kc_content_update_8005() {
+  _kc_content_delete('/about-kinect-consulting');
+  kc_content_install();
+}
+
 function _kc_content_delete($aliases) {
   if (!is_array($aliases)) {
     $aliases = [$aliases];
