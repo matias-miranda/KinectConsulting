@@ -65,7 +65,7 @@ header .container {
     width: 135px;
 }
 .navbar-btn {
-    margin: 0;
+    margin: 0 0 0 13px;
 }
 .navbar-brand,
 #block-kinect-consulting-account-menu {
