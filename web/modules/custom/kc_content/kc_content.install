@@ -14,7 +14,7 @@ const YAML_CONTENT_DIRECTORY = '';
  */
 function kc_content_install() {
   $path = \Drupal::service('module_handler')
-    ->getModule('kc_content')->getPath() . YAML_CONTENT_DIRECTORY;
+      ->getModule('kc_content')->getPath() . YAML_CONTENT_DIRECTORY;
   \Drupal::service('yaml_content.content_loader')
     ->setContentPath($path);
   $service = \Drupal::service('yaml_content.content_loader');
@@ -36,14 +36,31 @@ function kc_content_update_8001() {
  * Update content (Set Internal URLs in Home Page)
  */
 function kc_content_update_8002() {
-  $alias = \Drupal::service('path.alias_manager')
-    ->getPathByAlias('/kinect-consulting');
-  $params = \Drupal\Core\Url::fromUri("internal:" . $alias)
-    ->getRouteParameters();
-  $entity_type = key($params);
-  $node = \Drupal::entityTypeManager()
-    ->getStorage($entity_type)
-    ->load($params[$entity_type]);
-  $node->delete();
+  _kc_content_delete('/kinect-consulting');
   kc_content_install();
+}
+
+/**
+ * Update content (Home Page)
+ */
+function kc_content_update_8003() {
+  _kc_content_delete('/about-kinect-consulting');
+  kc_content_install();
+}
+
+function _kc_content_delete($aliases) {
+  if (!is_array($aliases)) {
+    $aliases = [$aliases];
+  }
+  foreach ($aliases as $alias) {
+    $path = \Drupal::service('path.alias_manager')
+      ->getPathByAlias($alias);
+    $params = \Drupal\Core\Url::fromUri("internal:" . $path)
+      ->getRouteParameters();
+    $entity_type = key($params);
+    $node = \Drupal::entityTypeManager()
+      ->getStorage($entity_type)
+      ->load($params[$entity_type]);
+    $node->delete();
+  }
 }

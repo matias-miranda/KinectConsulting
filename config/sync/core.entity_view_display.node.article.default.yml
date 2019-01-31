@@ -36,9 +36,9 @@ content:
     third_party_settings: {  }
   field_category:
     weight: 3
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content

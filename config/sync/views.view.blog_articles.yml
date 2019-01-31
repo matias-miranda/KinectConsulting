@@ -1564,7 +1564,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: vertical_item_list
+          view_mode: item_list
     cache_metadata:
       max-age: -1
       contexts:

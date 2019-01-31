@@ -394,6 +394,21 @@
   status: 1
   uid: 1
   field_exclude_title_from_display: 0
+  field_hero:
+    - entity: "paragraph"
+      type: "hero_item"
+      #      field_title: ""
+      #      field_text: ""
+      #      field_cta:
+      #        - uri: 'http://www.kinect-consulting.com'
+      #          title: 'CTA text'
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "aboutHero_0.jpg"
+          alt: "About Hero Image"
   field_paragraphs:
     - entity: "paragraph"
       type: "content"
@@ -401,7 +416,7 @@
       field_body:
         - format: "full_html"
           value: |
-            <div style="margin-left:20%;margin-right:20%">
+            <div style="margin-left:24%;margin-right:24%">
                 <h1>
                     What We Do</h1>
                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">The Cloud has brought a lot of change to modern IT. &nbsp;No longer limited by the capital outlay for hardware, data centers, and the need to manually manage infrastructure, the Cloud has brought an elasticity and automation to the IT world that we have never seen before. &nbsp;Old ways of architecting and developing applications no longer apply in this new dynamic.</span></p>
