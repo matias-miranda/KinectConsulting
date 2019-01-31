@@ -62,14 +62,12 @@
       {{ attachment_before }}
     </div>
   {% endif %}
-
+  <div class="views-articles-title">
+    <h1>Articles</h1>
+  </div>
   {% if rows %}
-    <div class="view-content container">
-      <div class="row">
-        <div class="recent-articles-items-wrapper">
-        {{ rows }}
-        </div>
-      </div>
+    <div class="view-content">
+      {{ rows }}
     </div>
   {% elseif empty %}
     <div class="view-empty">
