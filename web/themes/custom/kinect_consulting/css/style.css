@@ -214,6 +214,16 @@ b, strong {
 .address-item {
     padding-bottom: 9px;
 }
+@media screen and (max-width: 425px) {
+    ul.menu.menu--footer li {
+        margin: 0;
+        display: block;
+    }
+
+    ul.menu.menu--footer li a {
+        font-size: 13px;
+    }
+}
 
 /*  BUTTONS */
 .agree-button:hover, .agree-button:focus,
@@ -277,7 +287,7 @@ b, strong {
     height: 440px;
 }
 .field--name-field-hero.split .hero-image {
-    height: 350px;
+    height: 440px;
 }
 .field--name-field-hero.split > .field--item:last-child .hero-image {
     background-position: left;
@@ -460,6 +470,7 @@ b, strong {
     line-height: 1.4;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 .paragraph.paragraph--style--dark .hero-wrapper .content-wrapper h3 .field--name-field-text {
@@ -681,7 +692,7 @@ section.block-views-blockblog-articles-block-articles-author h2{
         float: right;
         bottom: 15px;
         position: absolute;
-        right: 8.3%;
+        right: 5%;
     }
     header .container {
         padding: 0 33px;
@@ -711,6 +722,9 @@ section.block-views-blockblog-articles-block-articles-author h2{
     }
 }
 @media screen and (min-width:1024px) {
+    .navbar-nav {
+        right: 6.3%;
+    }
     .navbar-default .navbar-nav > li > a {
         font-size: 15px;
         padding: 0 1rem 5px;
