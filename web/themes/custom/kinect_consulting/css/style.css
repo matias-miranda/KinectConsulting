@@ -67,7 +67,11 @@ header .container {
     margin: 0 2rem;
 }
 .logo.navbar-btn img {
-    width: 135px;
+    display: block;
+    height: 100%;
+    max-height: 90px;
+    position: relative;
+    width: auto;
 }
 .navbar-btn {
     margin: 0 0 0 13px;
@@ -289,7 +293,7 @@ b, strong {
     height: 440px;
 }
 .field--name-field-hero.split .hero-image {
-    height: 440px;
+    height: 350px;
 }
 .field--name-field-hero.split > .field--item:last-child .hero-image {
     background-position: left;
@@ -511,18 +515,25 @@ table.two-cols td {
 .view-display-id-articles_main_page {
     padding: 0 10%;
 }
+.form-inline .form-group {
+    display: block;
+    margin-bottom: 15px;
+}
 
 .post-date-wrapper {
-    margin: auto;
+    margin: 0 auto;
     width: 271px;
 }
 
 .post-date-wrapper > .form-item {
     float: left;
+    margin-bottom: 0 !important;
 }
 
-.view-display-id-articles_main_page .form--inline > div {
-    margin-bottom: 10px;
+.post-date-wrapper:after {
+    clear: both;
+    content: ' ';
+    display: block;
 }
 
 .view-display-id-articles_main_page .form--inline > .form-type-select:not(.post-date-wrapper) select {
@@ -538,7 +549,9 @@ table.two-cols td {
 .recent-articles-items-wrapper .article-content {
     text-align: justify;
 }
-
+.article-item-list .field--type-image img {
+    width:100%;
+}
 .recent-articles-items-wrapper > .views-row {
     max-width: 300px;
 }
@@ -692,7 +705,10 @@ section.block-views-blockblog-articles-block-articles-author h2{
 @media screen and (min-width: 769px) {
     .navbar .logo {
         margin: 0;
-        padding-left:15px;
+        padding:1rem 3rem 0;
+    }
+    .logo.navbar-btn img {
+        padding-top: 2rem;
     }
     .navbar-nav {
         float: right;
@@ -722,7 +738,7 @@ section.block-views-blockblog-articles-block-articles-author h2{
         padding: 2px 7px
     }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 850px) {
     .navbar-default .navbar-nav > li > a {
         font-size: 14px;
     }
@@ -731,39 +747,47 @@ section.block-views-blockblog-articles-block-articles-author h2{
     .navbar-nav {
         right: 6.3%;
     }
+    .logo.navbar-btn img {
+        padding-top: 0;
+    }
+
     .navbar-default .navbar-nav > li > a {
         font-size: 15px;
         padding: 0 1rem 5px;
     }
-    .field--name-field-hero .hero-image {
+    .field--name-field-hero .hero-image,
+    .field--name-field-hero.split .hero-image {
         height: 440px;
     }
     .field--name-field-hero.split > .field--item {
         width: 50%;
         float:left;
     }
-    .logo.navbar-btn img {
-        width: 150px;
-    }
     .main-container {
-        margin-top: 40px;
+        margin-top: 35px;
     }
     .standard-content-page .field--name-field-paragraphs {
         max-width: 1560px;
         margin: 0 6rem;
     }
+    .article-item-list .field--type-image img {
+        width: auto;
+    }
+    .form-inline .form-group {
+        display: inline-block;
+    }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1281px) {
     .navbar-default .navbar-nav > li > a {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 17px;
+        padding: 10px 15px;
     }
     .logo {
         margin: 8px 0 0;
         padding: 0;
     }
     .logo.navbar-btn img {
-        width: 193px;
+        max-height: 100px;
     }
 }
 @media screen and (min-width:1360px) {
@@ -771,42 +795,53 @@ section.block-views-blockblog-articles-block-articles-author h2{
         font-size: 18px;
         padding: 11px 15px;
     }
+
 }
 /*override bootstrap breakpoint */
 @media (min-width: 768px) and (max-width: 768px) {
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
+
+    .navbar-left, .navbar-right {
         float: none !important;
     }
+
     .navbar-toggle {
         display: block;
         margin-right: 15px !important;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
+
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
+
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
+
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
-    .navbar-nav>li {
+
+    .navbar-nav > li {
         float: none;
     }
-    .navbar-nav>li>a {
+
+    .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .collapse.in{
-        display:block !important;
+
+    .visible-xs-block,
+    .collapse.in {
+        display: block !important;
     }
 }

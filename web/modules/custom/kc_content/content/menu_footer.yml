@@ -1,0 +1,29 @@
+- entity: "menu_link_content"
+  title: "Terms and Conditions"
+  menu_name: "footer"
+  weight: 0
+  enabled: 1
+  link:
+    uri: "internal:/Kinect-Consulting-Terms-and-Conditions"
+
+- entity: "menu_link_content"
+  title: "Privacy Center"
+  menu_name: "footer"
+  weight: 1
+  enabled: 1
+  link:
+    - uri: "https://www.wfscorp.com/en/privacy-center"
+      options:
+        attributes:
+          target: _blank
+
+- entity: "menu_link_content"
+  title: "Cookies Policy"
+  menu_name: "footer"
+  weight: 2
+  enabled: 1
+  link:
+    - uri: "https://www.wfscorp.com/en/cookies-policy"
+      options:
+        attributes:
+          target: _blank

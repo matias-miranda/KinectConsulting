@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - wfs_gdpr
+id: wfs_gdpr.token
+label: Token
+targetEntityType: wfs_gdpr
+cache: true

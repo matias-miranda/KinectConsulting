@@ -189,6 +189,30 @@
               - "image"
               - filename: "CEFImage4.jpg"
           alt: "Cloud Execution Framework"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Security"
+      field_text: "The Security ViewPoint helps your business look at information security in a new way. How and what you secure is different in the Cloud. Many businesses want to move to the Cloud for speed. This ViewPoint ensures that your security stays ahead of your development team."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage5.jpg"
+          alt: "Security"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Day 2"
+      field_text: "If Day 1 is the day you go live with a new application in the Cloud, then what happens on Day 2? The Day 2 ViewPoint is all about making sure you have the operational processes in place to support your cloud solutions after you go live."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage6.jpg"
+          alt: "Day 2"
 - entity: "node"
   type: "standard_content_page"
   title: "Cloud Execution Framework"

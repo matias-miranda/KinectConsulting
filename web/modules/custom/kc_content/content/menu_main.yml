@@ -1,0 +1,58 @@
+- entity: "menu_link_content"
+  title: "Home"
+  menu_name: "main"
+  weight: -50
+  enabled: 1
+  link:
+    - uri: "internal:/"
+      options:
+        attributes:
+          class: "visible-xs-block"
+
+- entity: "menu_link_content"
+  title: "Cloud Execution Framework"
+  menu_name: "main"
+  weight: 0
+  enabled: 1
+  link:
+    uri: "internal:/cloud-execution-framework"
+
+- entity: "menu_link_content"
+  title: "Cloud Technical Services"
+  menu_name: "main"
+  weight: 1
+  enabled: 1
+  link:
+    uri: "internal:/technical-services"
+
+- entity: "menu_link_content"
+  title: "Cloud Trusted Advisor"
+  menu_name: "main"
+  weight: 2
+  enabled: 1
+  link:
+    uri: "internal:/cloud-trusted-advisor"
+
+- entity: "menu_link_content"
+  title: "Blog"
+  menu_name: "main"
+  weight: 3
+  enabled: 1
+  link:
+    uri: "internal:/articles"
+
+- entity: "menu_link_content"
+  title: "About"
+  menu_name: "main"
+  weight: 4
+  enabled: 1
+  link:
+    uri: "internal:/about-kinect-consulting"
+
+- entity: "menu_link_content"
+  title: "Contact US"
+  menu_name: "main"
+  weight: 5
+  enabled: 1
+  link:
+    uri: "internal:/kinect-consulting-contact-us-form"
