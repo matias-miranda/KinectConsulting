@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero_item
+label: 'Hero Item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

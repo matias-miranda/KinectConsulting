@@ -790,6 +790,6 @@ if (file_exists($app_root . '/' . $site_path . '/settings.environment.php')) {
     include $app_root . '/' . $site_path . '/settings.environment.php';
 }
 
-$config_directories['sync'] = '../config/sync';
+$settings['install_profile'] = 'kinect_consulting_site';
+$config_directories['sync'] = 'sites/default/files/config_TskOC_MAt1AsM1rAnDA_ByYjWl9qSAOjjno6Nc8w8WcCZGUoT1oOWxxO1Z5hXqz-NoNZvIJuFQ/sync';
 
-// $settings['install_profile'] = 'standard';

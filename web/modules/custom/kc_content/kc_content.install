@@ -23,6 +23,8 @@ function kc_content_install() {
   $service->loadContent('taxonomy_term_categories.yml');
   $service->loadContent('node_article_entity.yml');
   $service->loadContent('node_standard_content_page_entity.yml');
+  $service->loadContent('menu_main.yml');
+  $service->loadContent('menu_footer.yml');
 }
 
 /**
@@ -68,6 +70,36 @@ function kc_content_update_8005() {
  * Update content (Create Terms and Conditions page)
  */
 function kc_content_update_8006() {
+  kc_content_install();
+}
+
+/**
+ * Update content
+ */
+function kc_content_update_8007() {
+  _kc_content_delete([
+    '/about-kinect-consulting',
+    '/cloud-execution-framework',
+    '/cloud-trusted-advisor',
+  ]);
+  kc_content_install();
+}
+
+/**
+ * Update content (Contact Form iframe height)
+ */
+function kc_content_update_8008() {
+  _kc_content_delete('/kinect-consulting-contact-us-form');
+  kc_content_install();
+}
+
+/**
+ * Update content
+ */
+function kc_content_update_8009() {
+  _kc_content_delete([
+                      '/cloud-execution-framework'
+                    ]);
   kc_content_install();
 }
 

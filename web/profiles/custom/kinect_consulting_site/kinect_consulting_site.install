@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Kinect consulting site install profile.
+ */
+
+
+/**
+ * Implements hook_install().
+ *
+ * @see system_install()
+ */
+function kinect_consulting_site_install() {
+  \Drupal::service('module_installer')->install(['kc_content']);
+}

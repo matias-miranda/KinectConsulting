@@ -103,8 +103,8 @@
   body:
     - format: "full_html"
       value: |
-        <p>The journey to the Cloud is unique for every company. We’ve taken best practices from leading public cloud providers and built our Cloud Execution Framework – an iterative process to guide you on your specific journey using a proven pattern to success.<br />
-        	<br />
+        <p>The journey to the Cloud is unique for every company. We’ve taken best practices from leading public cloud providers and built our Cloud Execution Framework – an iterative process to guide you on your specific journey using a proven pattern to success.</p>
+        	<p>
         	Mapping the Journey is the first and most important part in the Cloud Execution Framework process. It starts with answering a few key questions.</p>
         <ul>
         	<li>
@@ -121,7 +121,7 @@
         		Are there any restrictions (e.g. technology choices, customer commitments, regulatory, etc)?</li>
         </ul>
         <p>The journey to the Cloud does not look the same for every business. This initial exercise is to help you map the journey to your timeline and your priorities. Your business may have processes in place that make parts of the journey very simple, but you may also have gaps that will require more focus. The end result is an agreed-upon Roadmap of iterative processes.<br />
-        	<br />
+        	</p>
         	<strong>One Cloud Execution Framework, Six Unique ViewPoints</strong><br />
         	Moving to the Cloud can be complex. The Cloud Execution Framework adds structure to the complexity by breaking it down into six easy-to-understand ViewPoints. ViewPoints are based on various stakeholders’ perspectives and address the objectives and concerns that come from relevant partners and team members.</p>
   field_exclude_title_from_display: 0
@@ -189,6 +189,30 @@
               - "image"
               - filename: "CEFImage4.jpg"
           alt: "Cloud Execution Framework"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Security"
+      field_text: "The Security ViewPoint helps your business look at information security in a new way. How and what you secure is different in the Cloud. Many businesses want to move to the Cloud for speed. This ViewPoint ensures that your security stays ahead of your development team."
+      field_text_position: "left"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage5.jpg"
+          alt: "Security"
+    - entity: "paragraph"
+      type: "image_text"
+      field_title: "Day 2"
+      field_text: "If Day 1 is the day you go live with a new application in the Cloud, then what happens on Day 2? The Day 2 ViewPoint is all about making sure you have the operational processes in place to support your cloud solutions after you go live."
+      field_text_position: "right"
+      field_image:
+        - "#process":
+            callback: "file"
+            args:
+              - "image"
+              - filename: "CEFImage6.jpg"
+          alt: "Day 2"
 - entity: "node"
   type: "standard_content_page"
   title: "Cloud Execution Framework"
@@ -297,11 +321,9 @@
   body:
     - format: "full_html"
       value: |
-        <p>In addition to our <a href="https://www.kinect-consulting.com/cloud-execution-framework" target="_blank">Cloud Execution Framework</a>, we offer our Cloud Trusted Adviser Service. The Cloud Trusted Advisor Service is a check point on your journey to the Cloud.<br />
-        	<br />
-        	It is important to verify that you are implementing best practices. Or you may be ready to take the next step after an initial cloud project. The Cloud Trusted Advisor Service allows you to pull from a team of experts to verify you are on the intended path.<br />
-        	<br />
-        	The Cloud Trusted Advisor Service can be customized for your needs, but here are some of the primary services:</p>
+        <p>In addition to our <a href="https://www.kinect-consulting.com/cloud-execution-framework" target="_blank">Cloud Execution Framework</a>, we offer our Cloud Trusted Adviser Service. The Cloud Trusted Advisor Service is a check point on your journey to the Cloud.</p>
+        <p>It is important to verify that you are implementing best practices. Or you may be ready to take the next step after an initial cloud project. The Cloud Trusted Advisor Service allows you to pull from a team of experts to verify you are on the intended path.</p>
+        <p>The Cloud Trusted Advisor Service can be customized for your needs, but here are some of the primary services:</p>
   field_exclude_title_from_display: 0
   field_hero:
     - entity: "paragraph"
@@ -414,7 +436,7 @@
       field_body:
         - format: "full_html"
           value: |
-            <div style="margin-left:24%;margin-right:24%">
+            <div style="margin-left:13%;margin-right:13%">
                 <h1>
                     What We Do</h1>
                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 14px;">The Cloud has brought a lot of change to modern IT. &nbsp;No longer limited by the capital outlay for hardware, data centers, and the need to manually manage infrastructure, the Cloud has brought an elasticity and automation to the IT world that we have never seen before. &nbsp;Old ways of architecting and developing applications no longer apply in this new dynamic.</span></p>
@@ -472,7 +494,7 @@
       field_url:
         - uri: 'https://mail-wfscorp.com/kinectconsulting-contactus'
       field_width: "1110"
-      field_height: "900"
+      field_height: "950"
 - entity: "node"
   type: "standard_content_page"
   title: "Kinect Consulting Contact Us Form"

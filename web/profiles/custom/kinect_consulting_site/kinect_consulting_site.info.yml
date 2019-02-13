@@ -1,0 +1,59 @@
+name: 'Kinect Consulting'
+type: profile
+description: 'Kinect Consulting site.'
+version: VERSION
+core: 8.x
+install:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - comment
+  - config
+  - contact
+  - contextual
+  - ctools
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - entity_reference_revisions
+  - field
+  - field_ui
+  - file
+  - filter
+  - help
+  - history
+  - image
+  - kc_custom
+  - link
+  - link_attributes
+  - menu_ui
+  - node
+  - options
+  - page_cache
+  - path
+  - search
+  - system
+  - taxonomy
+  - text
+  - token
+  - toolbar
+  - update
+  - user
+  - views_ui
+  - wfs_gdpr
+  - yaml_content
+  - menu_link_content
+  - pathauto
+  - views
+  - paragraphs
+themes:
+  - kinect_consulting
+  - bootstrap
+  - seven
+

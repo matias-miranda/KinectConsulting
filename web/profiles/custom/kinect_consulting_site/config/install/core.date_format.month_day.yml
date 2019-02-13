@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: month_day
+label: 'Month Day'
+locked: false
+pattern: 'F jS'

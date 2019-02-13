@@ -8,7 +8,7 @@
     - format: "full_html"
       value: |
         <p>Customization and Personalization are critical components to providing an enriching user experience for any modern web/mobile application(s). Intent of this first post of the series is to provide an overview on the usage of Customization with Personalization to build powerful data, UX rich Angular applications</p>
-        <p>&nbsp;</p>
+
         <h3>
         	<b>Customization with Personalization</b></h3>
         <p>People often use the words customization and personalization interchangeably, actually they serve different purposes towards the common goal i.e., providing a rich experience to the user of the application.</p>

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.vertical_item_list
+label: 'Vertical Item List'
+targetEntityType: node
+cache: true

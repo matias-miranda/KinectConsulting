@@ -22,7 +22,7 @@
         "drupal/admin_toolbar": "^1.25",
         "drupal/bootstrap": "^3.17",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.6.0",
+        "drupal/core": "^8.6.7",
         "drupal/devel": "^1.2",
         "drupal/link_attributes": "^1.5",
         "drupal/menu_export": "^1.2",

@@ -1,0 +1,11 @@
+name: kinect-consulting.com
+mail: mmiranda@weknowinc.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /kinect-consulting
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
